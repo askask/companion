@@ -17,6 +17,7 @@ TODO
 /html
 /bundled-modules
 tsconfig.tsbuildinfo
+.idea
 
 dist
 
