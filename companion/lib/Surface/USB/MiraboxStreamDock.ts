@@ -1779,6 +1779,8 @@ class StreamDock extends EventEmitter {
 				},
 			],
 		},
+
+
 	}
 
 	private static cmdPrefix = [0x43, 0x52, 0x54, 0, 0]
@@ -1815,6 +1817,8 @@ class StreamDock extends EventEmitter {
 		} else if (this.info.productId === 0x6670) {
 			this.model = StreamDock.models['HSV 293S-2']
 			this.packetSize = 512
+		} else if (this.info.productId === 0x3010) {
+			this.model = StreamDock.models['293V3']
 		} else {
 			// this.modelType = 'Unknown'
 			this.emit('remove')
