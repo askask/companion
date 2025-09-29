@@ -1818,7 +1818,7 @@ class StreamDock extends EventEmitter {
 			this.model = StreamDock.models['HSV 293S-2']
 			this.packetSize = 512
 		} else if (this.info.productId === 0x3010) {
-			this.model = StreamDock.models['293V3']
+			this.model = StreamDock.models['HSV 293S-2']
 		} else {
 			// this.modelType = 'Unknown'
 			this.emit('remove')
